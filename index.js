@@ -388,7 +388,6 @@ Use artistByCountry to do the following:
 function artistByCountry(Array9,N9){
   let clone9 = ['trash'];
   let copy9 = clone9.concat(Array9);
-  copy9.shift();
   for(let i = 0; i < copy9.length; i++){
   if(copy9[i].nationality === N9){
   } else {
@@ -399,10 +398,11 @@ function artistByCountry(Array9,N9){
     for(let i = 0; i < copy9.length; i++){
     copy9[i] = copy9[i].name
     }
+    copy9.shift();
     console.log(copy9);
     return copy9
   }
-  artistByCountry(artists,"Russian")
+  artistByCountry(artists,"Spanish")
 
 
 /* ***** END OF TASKS ***** */
