@@ -308,7 +308,7 @@ function addArtist(Array6,N6,Y6,G6,NAT6,B6) {
     bio: B6}
     copy3.push(x6);
     console.log(x6);
-    console.log('-----------------')
+    console.log('-----------------') // the bit here is really just for when i was testing in repl to make it easier to track
     console.log(copy3);
   return copy3
 }
@@ -324,9 +324,26 @@ Use lotsOfArt to do the following:
 🌟 EXAMPLE: lotsOfArt(artists) will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]
 */
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt(Array7) {
+  let clone7 = ['trash'];
+  let copy7 = clone7.concat(Array7);
+  copy7.shift();
+  for(let i = 0; i < copy7.length; i++){
+    console.log(i);
+    if(copy7[i].paintings<100){
+    copy7.splice([i],1);
+    i = 0
+    } else {
+    console.log('100+')
+    }
+  }
+  for(let i = 0; i < copy7.length; i++){
+  copy7[i] = copy7[i].name
+  }
+  console.log(copy7);
+return(copy7);
 }
+lotsOfArt(artists)
 
 
 
