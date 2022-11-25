@@ -297,9 +297,21 @@ Use addArtist to do the following:
 5. Add the newly created object to the copied array, then return the copied array
 🌟 EXAMPLE: Invoking addArtist(artists, 'John Doe', '1988-2022', 'Full Stack Development', 'African American', 'I have a background in customer service at Big Retail Chain. I am attending BloomTech to become a Frontend Developer.') should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(Array6,N6,Y6,G6,NAT6,B6) {
+  let clone3 = ['trash'];
+  let copy3 = clone3.concat(Array6);
+  copy3.shift();
+  let x6 = {name: N6,
+    years: Y6,
+    genre: G6,
+    nationality: NAT6,
+    bio: B6}
+    copy3.push(x6);
+    console.log(x6);
+    console.log('-----------------')
+    console.log(copy3);
 }
+addArtist(artists,'1','2','3','4','5')
 
 
 
