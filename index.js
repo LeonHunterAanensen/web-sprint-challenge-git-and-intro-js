@@ -231,10 +231,10 @@ Use getArtistByIndex to do the following:
 
 🌟 EXAMPLE: if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(Array,Index) {
-  let x = (Array[Index].name)
-  console.log(`the artist at index ${Index} is ${x}`);
-  return `the artist at index ${Index} is ${x}`;
+function getArtistByIndex(Array3,Index3) {
+  let x3 = (Array3[Index3].name)
+  console.log(`the artist at index ${Index3} is ${x3}`);
+  return `the artist at index ${Index3} is ${x3}`;
 }
 getArtistByIndex(artists,8);
 
@@ -248,10 +248,18 @@ Use listOfNames to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+function listOfNames(Array4) {
+  let clone1 = ['trash'];
+  let copy = clone1.concat(Array4);
+  copy.shift();
+  for(let i = 0; i < copy.length; i++){
+    console.log(i);
+    copy[i] = copy[i].name;
+    console.log(copy[i]);
+  }
+  return copy 
 }
-
+listOfNames(artists)
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
