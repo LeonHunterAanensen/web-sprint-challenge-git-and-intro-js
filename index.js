@@ -252,7 +252,7 @@ function listOfNames(Array4) {
   let clone1 = ['trash'];
   let copy1 = clone1.concat(Array4);
   copy1.shift();
-  for(let i = 0; i < copy.length; i++){
+  for(let i = 0; i < copy1.length; i++){
     console.log(i);
     copy1[i] = copy1[i].name;
     console.log(copy1[i]);
