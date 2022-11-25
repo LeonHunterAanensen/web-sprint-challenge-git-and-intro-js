@@ -310,6 +310,7 @@ function addArtist(Array6,N6,Y6,G6,NAT6,B6) {
     console.log(x6);
     console.log('-----------------')
     console.log(copy3);
+  return copy3
 }
 addArtist(artists,'1','2','3','4','5')
 
