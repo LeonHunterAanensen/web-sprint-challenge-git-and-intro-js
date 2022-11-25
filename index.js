@@ -250,14 +250,14 @@ Use listOfNames to do the following:
 
 function listOfNames(Array4) {
   let clone1 = ['trash'];
-  let copy = clone1.concat(Array4);
-  copy.shift();
+  let copy1 = clone1.concat(Array4);
+  copy1.shift();
   for(let i = 0; i < copy.length; i++){
     console.log(i);
-    copy[i] = copy[i].name;
-    console.log(copy[i]);
+    copy1[i] = copy1[i].name;
+    console.log(copy1[i]);
   }
-  return copy 
+  return copy1
 }
 listOfNames(artists)
 
@@ -271,11 +271,15 @@ Use removeArtist to do the following:
 5. Return the resulting copied array
 🌟 EXAMPLE: if removeArtist is invoked with the artists array and the number 0, it will return the resulting array with Amedeo Modigliani removed from our dataset. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(Array5,Index5) {
+  let clone2 = ['trash'];
+  let copy2 = clone2.concat(Array5);
+  copy2.shift();
+  copy2.splice(Index5,1);
+  console.log(copy2);
+return copy2 ;
 }
-
-
+removeArtist(artists,0)
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
